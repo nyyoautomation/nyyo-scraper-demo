@@ -52,6 +52,6 @@ Questions? Ask in your order chat.
 ## Price (typical)
 - Up to ~1,000 rows / 1 site: **$69**
 - Up to ~10,000 rows or 3 sites: **$139**  
-Delivery: 2 days ($69) · 3 days ($139). Crypto only: USDC on BNB Chain or Base.
+Delivery: 2 days ($69) · 3 days ($139). Available on LaborX.
 
-Contact: [LaborX — Nyyo Automation](https://laborx.com/freelancers/users/id475124) · [GitHub](https://github.com/nyyoautomation)
+Available on LaborX · [Profile & packages](https://github.com/nyyoautomation)
