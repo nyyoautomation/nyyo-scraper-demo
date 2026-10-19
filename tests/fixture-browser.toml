@@ -1,0 +1,15 @@
+# Test config for the browser add-on: /js/ builds its 6 items with JavaScript 300 ms after loading.
+[polite]
+delay_seconds = 0.5
+
+[[target]]
+name = "shopjs"
+start_urls = ["http://127.0.0.1:47391/js/"]
+items = "li.product"
+render = "browser"
+unique_by = ["sku"]
+  [target.fields]
+  sku   = { attr = "data-sku" }
+  name  = { css = "a.name", attr = "title" }
+  price = { css = "span.price", type = "number" }
+  url   = { css = "a.name", attr = "href", type = "url" }

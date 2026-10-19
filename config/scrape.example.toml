@@ -1,0 +1,41 @@
+# Nyyo scraper kit - your settings.
+# Edit this file, save it, then run ./setup.sh (Windows: .\setup.ps1) again.
+# Lines starting with # are comments. Text values go between "double quotes".
+# The example below scrapes books.toscrape.com, a public sandbox made for scraping practice,
+# so your very first run works before you change anything.
+
+[output]
+folder = "output"              # your CSV + JSON files land here (inside the kit folder)
+formats = ["csv", "json"]      # keep one or both
+
+[polite]
+obey_robots_txt = true         # the kit skips any page the site's robots.txt forbids. Keep it on.
+delay_seconds = 1.0            # pause between two requests to the same site (minimum 0.5)
+max_pages = 5                  # safety cap per target (each target can lower or raise it)
+timeout_seconds = 30
+retries = 3                    # on "too many requests" (429) or server errors, wait longer and retry
+contact_url = ""               # optional: your website, added to the user-agent so site owners know who runs it
+
+[google_sheets]                # optional: also copy each target into a tab of YOUR Google Sheet
+enabled = false
+credentials_file = "credentials/service-account.json"   # your own key, see credentials/README.md
+spreadsheet_id = ""            # the long id in the sheet URL: docs.google.com/spreadsheets/d/<THIS>/edit
+
+# ---- One [[target]] block per site or section. Copy the block to add more. ----
+[[target]]
+name = "books"                                 # file names: output/books.csv and output/books.json
+start_urls = ["https://books.toscrape.com/"]   # one or more list pages
+items = "article.product_pod"                  # CSS selector of ONE item (one row) on the page
+next_page = "li.next a"                        # CSS selector of the "next page" link ("" = no paging)
+max_pages = 3
+unique_by = ["url"]                            # columns that identify a row (removes duplicates)
+render = "html"                                # "browser" for pages that need JavaScript (./setup.sh --browser)
+
+  # Columns: name = { css = "selector inside the item", attr = "attribute or empty for the text",
+  #                   type = "text" | "number" | "int" | "url", regex = "...", map = {...}, all = true }
+  [target.fields]
+  title        = { css = "h3 a", attr = "title" }
+  price        = { css = "p.price_color", type = "number" }
+  availability = { css = "p.instock.availability" }
+  rating       = { css = "p.star-rating", attr = "class", type = "int", map = { One = 1, Two = 2, Three = 3, Four = 4, Five = 5 } }
+  url          = { css = "h3 a", attr = "href", type = "url" }

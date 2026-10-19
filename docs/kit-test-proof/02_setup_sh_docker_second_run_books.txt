@@ -1,0 +1,15 @@
+$ SH
+
+==> Scraper image nyyo-scraper-kit:1.0.0 already installed.
+Nyyo scraper kit 1.0.0 | user-agent: NyyoScraperKit/1.0.0 (+https://github.com/nyyoautomation/nyyo-scraper-demo)
+Polite mode: robots.txt obeyed, 1s between requests per site, max 5 pages per target.
+Scraping 'books'...
+  books: page 1 -> 20 item(s)  https://books.toscrape.com/
+  books: page 2 -> 20 item(s)  https://books.toscrape.com/catalogue/page-2.html
+  books: page 3 -> 20 item(s)  https://books.toscrape.com/catalogue/page-3.html
+  -> 60 rows (0 duplicate(s) removed) from 3 page(s): output/books.csv, output/books.json
+Done. 4 request(s) sent. Files are in output/
+
+==> Finished. Your files: <scratch>/nyyo-scraper-kit/output
+
+[exit code 0]

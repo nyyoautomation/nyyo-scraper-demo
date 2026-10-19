@@ -1,0 +1,36 @@
+# Test config: the local fixture shop served by tests/fixture_server.py on port 47391.
+[output]
+folder = "output"
+formats = ["csv", "json"]
+
+[polite]
+obey_robots_txt = true
+delay_seconds = 0.5
+max_pages = 10
+retries = 3
+
+[google_sheets]
+enabled = false
+credentials_file = "credentials/service-account.json"
+spreadsheet_id = ""
+
+[[target]]
+name = "shop"
+start_urls = ["http://127.0.0.1:47391/shop/"]
+items = "li.product"
+next_page = "a.next"
+unique_by = ["sku"]
+  [target.fields]
+  sku      = { attr = "data-sku" }
+  name     = { css = "a.name", attr = "title" }
+  price    = { css = "span.price", type = "number" }
+  rating   = { css = "p.stars", attr = "class", type = "int", map = { One = 1, Two = 2, Three = 3, Four = 4, Five = 5 } }
+  in_stock = { css = "span.stock" }
+  url      = { css = "a.name", attr = "href", type = "url" }
+
+[[target]]
+name = "private"
+start_urls = ["http://127.0.0.1:47391/private/list.html"]
+items = "li.product"
+  [target.fields]
+  sku = { attr = "data-sku" }

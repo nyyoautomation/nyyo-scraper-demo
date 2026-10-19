@@ -1,0 +1,27 @@
+Date: Oct 19, 2026, 23:41 CEST
+System: Linux x86_64
+Docker: 26.1.5+dfsg1
+Python on the host: Python 3.13.5
+PowerShell: 7.4.6
+Kit ZIP: nyyo-scraper-kit.zip sha256 7717ca15063a136770d7d403918be8f56367cf6482cb097b2c08a730de1eb805
+Scratch folder: <scratch> (empty before unzip)
+kit images present before test: 0
+
+unzipped:
+./.dockerignore
+./Dockerfile
+./INSTALL.md
+./LICENSE
+./config/scrape.example.toml
+./credentials/README.md
+./requirements-browser.in
+./requirements-browser.txt
+./requirements.in
+./requirements.txt
+./scraper/nyyo_scrape.py
+./setup.ps1
+./setup.sh
+./tests/fixture-browser.toml
+./tests/fixture.toml
+./tests/fixture_server.py
+base image size: 142 MB

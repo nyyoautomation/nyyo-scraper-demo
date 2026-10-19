@@ -1,0 +1,27 @@
+Checks
+
+PASS  books.toscrape.com: 60 rows from 3 pages, every row has title, price, availability, rating 1-5, absolute url
+PASS  books.toscrape.com: JSON has the same 60 rows as the CSV
+PASS  books second run: image reused, same rows, previous file kept
+PASS  config/scrape.toml created on the first run only (second run did not overwrite it)
+PASS  fixture: 24 rows exactly as expected (25 items, 1 duplicate removed), all fields right
+PASS  fixture: JSON matches the CSV (types: price number, rating int or empty)
+PASS  robots.txt: /private/ never requested, target reported as blocked
+PASS  robots.txt fetched first, before any page
+PASS  rate limit: at least 0.5 s between any two requests to the site
+PASS  HTTP 429 on page 2: waited (Retry-After honoured) and retried, page 2 scraped
+PASS  user-agent names the tool on every request
+PASS  fixture re-run (Docker): same 24 rows, no duplicates added
+PASS  native Python: venv created + pinned packages installed by hash, then reused
+PASS  Docker and native give identical rows
+PASS  setup.ps1 (PowerShell 7, Docker): same 24 rows
+PASS  setup.ps1 native: creates its venv, installs by hash, same rows, then reuses it
+PASS  exit code 1 (warning: robots-blocked target) on every fixture run, 0 on the books runs
+PASS  broken selector: exit 2, 0 rows, previous good file kept byte for byte
+PASS  Google Sheets without a key: clear message, CSV/JSON still written, exit 1
+PASS  Google Sheets (stand-in library): tab 'shop' cleared then filled with header + 24 rows at A1
+PASS  no Google key, config or output left inside the kit's shipped files
+PASS  build_dist.sh: clean copy builds; refuses a key file, a fake AWS key and an e-mail address
+PASS  browser add-on (Docker, Chromium via Playwright): 6 rows built by JavaScript
+
+23 passed, 0 failed

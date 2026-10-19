@@ -1,0 +1,19 @@
+$ SH --native
+
+==> Creating a private Python environment in .venv (uses Python 3.13.5)...
+==> Installing pinned Python packages (checked by hash)...
+Nyyo scraper kit 1.0.0 | user-agent: NyyoScraperKit/1.0.0 (+https://github.com/nyyoautomation/nyyo-scraper-demo)
+Polite mode: robots.txt obeyed, 0.5s between requests per site, max 10 pages per target.
+Scraping 'shop'...
+  shop: page 1 -> 10 item(s)  http://127.0.0.1:47391/shop/
+  shop: page 2 -> 10 item(s)  http://127.0.0.1:47391/shop/page-2.html
+  shop: page 3 -> 5 item(s)  http://127.0.0.1:47391/shop/page-3.html
+  -> 24 rows (1 duplicate(s) removed) from 3 page(s): output/shop.csv, output/shop.json
+Scraping 'private'...
+[!] robots.txt of 127.0.0.1:47391 does not allow http://127.0.0.1:47391/private/list.html: skipped.
+[!] 'private': nothing scraped, robots.txt forbids it (this is the site owner's choice).
+Done. 4 request(s) sent. Files are in <scratch>/nyyo-scraper-kit/output
+
+[!] Finished with warnings (see [!] lines above). Your files: <scratch>/nyyo-scraper-kit/output
+
+[exit code 1]

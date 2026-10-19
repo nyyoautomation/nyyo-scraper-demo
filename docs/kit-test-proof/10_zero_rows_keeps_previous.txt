@@ -1,0 +1,15 @@
+$ SH --target shop
+
+==> Scraper image nyyo-scraper-kit:1.0.0 already installed.
+Nyyo scraper kit 1.0.0 | user-agent: NyyoScraperKit/1.0.0 (+https://github.com/nyyoautomation/nyyo-scraper-demo)
+Polite mode: robots.txt obeyed, 0.5s between requests per site, max 10 pages per target.
+Scraping 'shop'...
+  shop: page 1 -> 0 item(s)  http://127.0.0.1:47391/shop/
+  shop: page 2 -> 0 item(s)  http://127.0.0.1:47391/shop/page-2.html
+[!] 'shop': 0 rows this time, so your previous file shop.csv was kept unchanged (the site may be down or its layout changed: check the selectors).
+  shop: page 3 -> 0 item(s)  http://127.0.0.1:47391/shop/page-3.html
+Done. 4 request(s) sent. Files are in output/
+
+[!] No rows for at least one target: check the selectors in config/scrape.toml (INSTALL.md, Troubleshooting).
+
+[exit code 2]

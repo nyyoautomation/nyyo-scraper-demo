@@ -1,0 +1,22 @@
+== A. clean copy
+gitleaks check of the staged kit: no leaks
+   138539                     16 files
+sha256 7717ca15063a136770d7d403918be8f56367cf6482cb097b2c08a730de1eb805
+[exit code 0]
+
+== B. a Google key file left in credentials/
+refusing: forbidden file(s) in kit:
+./credentials/service-account.json
+[exit code 1]
+
+== C. a fake AWS key pasted into INSTALL.md
+gitleaks check of the staged kit: no leaks
+<stage>/nyyo-scraper-kit/INSTALL.md:184:aws_access_key_id = <fake AWS key>
+refusing: secret-like string in kit
+[exit code 1]
+
+== D. an e-mail address added to INSTALL.md
+gitleaks check of the staged kit: no leaks
+<stage>/nyyo-scraper-kit/INSTALL.md:184:Contact: <test address>
+refusing: off-platform contact or payment wording in kit (lines above)
+[exit code 1]

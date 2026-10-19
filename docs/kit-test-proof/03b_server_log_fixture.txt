@@ -1,0 +1,5 @@
++  0.00s  200  /robots.txt            UA: NyyoScraperKit/1.0.0 (+https://github.com/nyyoautomation/nyyo-scraper-demo)
++  0.50s  200  /shop/                 UA: NyyoScraperKit/1.0.0 (+https://github.com/nyyoautomation/nyyo-scraper-demo)
++  1.00s  429  /shop/page-2.html      UA: NyyoScraperKit/1.0.0 (+https://github.com/nyyoautomation/nyyo-scraper-demo)
++  3.00s  200  /shop/page-2.html      UA: NyyoScraperKit/1.0.0 (+https://github.com/nyyoautomation/nyyo-scraper-demo)
++  3.50s  200  /shop/page-3.html      UA: NyyoScraperKit/1.0.0 (+https://github.com/nyyoautomation/nyyo-scraper-demo)

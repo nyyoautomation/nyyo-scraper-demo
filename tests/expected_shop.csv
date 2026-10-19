@@ -1,0 +1,25 @@
+sku,name,price,rating,in_stock,url,source_url,page
+SKU-001,Espresso cups (set of 4),12.5,4,In stock,http://127.0.0.1:47391/shop/item/sku-001.html,http://127.0.0.1:47391/shop/,1
+SKU-002,"Café grinder, hand crank",1299,5,In stock,http://127.0.0.1:47391/shop/item/sku-002.html,http://127.0.0.1:47391/shop/,1
+SKU-003,Pour-over kettle,45,3,Sold out,http://127.0.0.1:47391/shop/item/sku-003.html,http://127.0.0.1:47391/shop/,1
+SKU-004,Paper filters x100,3.99,,In stock,http://127.0.0.1:47391/shop/item/sku-004.html,http://127.0.0.1:47391/shop/,1
+SKU-005,Cold brew jar 1 L,19,2,In stock,http://127.0.0.1:47391/shop/item/sku-005.html,http://127.0.0.1:47391/shop/,1
+SKU-006,Milk frother,24.95,4,Sold out,http://127.0.0.1:47391/shop/item/sku-006.html,http://127.0.0.1:47391/shop/,1
+SKU-007,Tamper 58 mm,29,5,In stock,http://127.0.0.1:47391/shop/item/sku-007.html,http://127.0.0.1:47391/shop/,1
+SKU-008,Knock box,15,1,In stock,http://127.0.0.1:47391/shop/item/sku-008.html,http://127.0.0.1:47391/shop/,1
+SKU-009,Scale 0.1 g,34.99,4,In stock,http://127.0.0.1:47391/shop/item/sku-009.html,http://127.0.0.1:47391/shop/,1
+SKU-010,"Travel mug ""Atlas""",18,3,In stock,http://127.0.0.1:47391/shop/item/sku-010.html,http://127.0.0.1:47391/shop/,1
+SKU-011,Green tea sampler,9.5,4,In stock,http://127.0.0.1:47391/shop/item/sku-011.html,http://127.0.0.1:47391/shop/page-2.html,2
+SKU-012,Matcha whisk,11,5,Sold out,http://127.0.0.1:47391/shop/item/sku-012.html,http://127.0.0.1:47391/shop/page-2.html,2
+SKU-013,"Teapot, cast iron",59,4,In stock,http://127.0.0.1:47391/shop/item/sku-013.html,http://127.0.0.1:47391/shop/page-2.html,2
+SKU-014,Loose-leaf infuser,6.75,3,In stock,http://127.0.0.1:47391/shop/item/sku-014.html,http://127.0.0.1:47391/shop/page-2.html,2
+SKU-015,Chai spice mix,7.2,2,In stock,http://127.0.0.1:47391/shop/item/sku-015.html,http://127.0.0.1:47391/shop/page-2.html,2
+SKU-016,Honey dipper,4,,In stock,http://127.0.0.1:47391/shop/item/sku-016.html,http://127.0.0.1:47391/shop/page-2.html,2
+SKU-017,Glass tumbler x2,14,4,In stock,http://127.0.0.1:47391/shop/item/sku-017.html,http://127.0.0.1:47391/shop/page-2.html,2
+SKU-018,Coffee beans 1 kg,32,5,In stock,http://127.0.0.1:47391/shop/item/sku-018.html,http://127.0.0.1:47391/shop/page-2.html,2
+SKU-019,Decaf beans 500 g,16.5,3,Sold out,http://127.0.0.1:47391/shop/item/sku-019.html,http://127.0.0.1:47391/shop/page-2.html,2
+SKU-020,Cleaning tablets,8.99,4,In stock,http://127.0.0.1:47391/shop/item/sku-020.html,http://127.0.0.1:47391/shop/page-3.html,3
+SKU-021,Descaler 500 ml,10,3,In stock,http://127.0.0.1:47391/shop/item/sku-021.html,http://127.0.0.1:47391/shop/page-3.html,3
+SKU-022,Barista apron,27,5,In stock,http://127.0.0.1:47391/shop/item/sku-022.html,http://127.0.0.1:47391/shop/page-3.html,3
+SKU-023,Latte art pen,5.5,2,In stock,http://127.0.0.1:47391/shop/item/sku-023.html,http://127.0.0.1:47391/shop/page-3.html,3
+SKU-024,Gift card 50,50,,In stock,http://127.0.0.1:47391/shop/item/sku-024.html,http://127.0.0.1:47391/shop/page-3.html,3

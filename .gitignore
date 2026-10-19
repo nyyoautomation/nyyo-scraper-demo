@@ -1,0 +1,8 @@
+.venv/
+output/
+config/scrape.toml
+credentials/*
+!credentials/README.md
+__pycache__/
+*.pyc
+.env
