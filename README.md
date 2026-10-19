@@ -25,8 +25,8 @@ Same pattern for directories, catalogs, listings: you pick the columns, I delive
 **Not included:** sites behind login, personal/sensitive data, targets whose Terms forbid scraping.
 
 ## Price (typical)
-- Up to ~1,000 rows / 1 site: **$40**
-- Up to ~10,000 rows or 3 sites: **$90**  
-Turnaround 24–48h. Crypto only (USDC / SOL / ETH / BTC).
+- Up to ~1,000 rows / 1 site: **$69**
+- Up to ~10,000 rows or 3 sites: **$139**  
+Turnaround 24–48h. Crypto only: USDC on BNB Chain or Base.
 
 Contact: [LaborX — Nyyo Automation](https://laborx.com/freelancers/users/id475124) · [GitHub](https://github.com/nyyoautomation)
